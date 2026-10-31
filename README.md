@@ -3,7 +3,7 @@
 **Name:** Dinmukhammed Dauletkhan
 **Group:** SE-2538
 
-GitHub Pages link: [add your github.io link here after you enable Pages]
+GitHub Pages link: https://adoeveshiron.github.io/Assignment6_Web/
 
 ## Part 1. Getting Started with jQuery (Task 0-1)
 jQuery is loaded from a CDN and wrapped in `$(document).ready()`, which logs "jQuery is ready!" to the console. The profile section uses tag (`h2`), id (`#headline`) and class selectors. The "Change Greeting" button swaps the headline text with `.text()`, and the Light/Dark Theme buttons toggle a CSS class that restyles the page with `.css()`/`.addClass()`/`.removeClass()`.
