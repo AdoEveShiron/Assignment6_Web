@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Assignment 6 - jQuery Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Part1 -->
+  <header id="profileSection" class="card">
+    <h1 id="headline">Welcome to My Portfolio</h1>
+    <p id="name" class="tagline">Dinmukhammed Dauletkhan</p>
+    <p id="intro">Hi! I'm a Software Engineering student learning front-end development. This page is my Assignment 6 project built with jQuery.</p>
+
+    <div class="btn-row">
+      <button id="updateGreetingBtn">Change Greeting</button>
+      <button id="lightThemeBtn">Light Theme</button>
+      <button id="darkThemeBtn">Dark Theme</button>
+    </div>
+  </header>
+
+  <!-- Part2 -->
+  <!-- Task2 -->
+  <section class="card" id="aboutSection">
+    <h2>About Me</h2>
+    <p>I'm a student who enjoys building small web projects and slowly getting better at JavaScript and jQuery.</p>
+
+    <p id="statusMessage" class="status">Currently learning jQuery!</p>
+
+    <ul id="funFacts">
+      <li>I like playing football in my free time.</li>
+      <li>My favorite part of coding is making things interactive.</li>
+      <li>My goal is to become a solid front-end developer.</li>
+    </ul>
+
+    <div class="btn-row">
+      <button id="hideBtn">Hide</button>
+      <button id="showBtn">Show</button>
+      <button id="toggleBtn">Toggle</button>
+    </div>
+  </section>
+
+  <!-- Task3 -->
+  <section class="card" id="gallerySection">
+    <h2>My Gallery</h2>
+    <p>A couple of photos, controlled with jQuery fade effects.</p>
+
+    <div class="gallery">
+      <img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnotHw1JLUaVq3bBbd62oToinhFzr_V3vJSXa_nEvHkg&s=10" alt="profile picture">
+      <img id="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhXS3a6RyIrJOSTgUqVeiwhzR6AiXIBbyrQq_KMlDvEg&s=10" alt="hobby photo">
+    </div>
+
+    <div class="btn-row">
+      <button id="fadeInBtn">Fade In</button>
+      <button id="fadeOutBtn">Fade Out</button>
+      <button id="fadeToggleBtn">Fade Toggle</button>
+    </div>
+  </section>
+
+  <!-- Task4 -->
+  <section class="card">
+    <h2>My Favorites</h2>
+
+    <div class="collapsible">
+      <h3 class="panel-heading">My Favorite Music ▾</h3>
+      <div class="panel">
+        <p>I mostly listen to rap and lo-fi beats while studying or coding.</p>
+      </div>
+    </div>
+
+    <div class="collapsible">
+      <h3 class="panel-heading">My Favorite Movie ▾</h3>
+      <div class="panel">
+        <p>Interstellar - I like how it mixes science with emotion.</p>
+      </div>
+    </div>
+
+    <div class="collapsible">
+      <h3 class="panel-heading">My Favorite Subject ▾</h3>
+      <div class="panel">
+        <p>Web Technologies - it's satisfying to see results right in the browser.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Part3 -->
+  <!-- Task5 -->
+  <section class="card" id="skillsListSection">
+    <h2>Technical Skills</h2>
+
+    <ul id="skillList">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>jQuery</li>
+    </ul>
+
+    <div class="btn-row">
+      <input type="text" id="newSkillInput" placeholder="New skill...">
+      <button id="addSkillBtn">Add Skill</button>
+      <button id="prependSkillBtn">Prepend Skill</button>
+      <button id="removeSkillBtn">Remove Skill</button>
+    </div>
+  </section>
+
+  <!-- Task6 -->
+  <section class="card" id="socialSection">
+    <h2>Find Me Online</h2>
+    <p>
+      <a id="socialLink" href="https://github.com" target="_blank">My GitHub Profile</a>
+    </p>
+    <button id="switchLinkBtn">Switch to LinkedIn</button>
+  </section>
+
+  <!-- Task7 -->
+  <section class="card" id="formSection">
+    <h2>Contact Form</h2>
+
+    <form id="liveForm">
+      <label for="nameInput">Name</label>
+      <input type="text" id="nameInput" placeholder="Your name">
+
+      <label for="emailInput">Email</label>
+      <input type="email" id="emailInput" placeholder="Your email">
+    </form>
+
+    <p class="live-preview">Live preview: <span id="livePreview">...</span></p>
+  </section>
+
+  <!-- Part4 -->
+  <!-- Task8 -->
+  <section class="card" id="skillBarsSection">
+    <h2>Skill Levels</h2>
+
+    <div class="skill-bar-row">
+      <span class="skill-label">HTML &amp; CSS</span>
+      <div class="skill-bar-track">
+        <div class="skill-bar" id="barHtml"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-row">
+      <span class="skill-label">JavaScript</span>
+      <div class="skill-bar-track">
+        <div class="skill-bar" id="barJs"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-row">
+      <span class="skill-label">jQuery</span>
+      <div class="skill-bar-track">
+        <div class="skill-bar" id="barJquery"></div>
+      </div>
+    </div>
+
+    <button id="animateSkillsBtn">Animate My Skills</button>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
